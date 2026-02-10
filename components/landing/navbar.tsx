@@ -18,8 +18,8 @@ import { cn } from "@/lib/utils"
 import { CTAModal } from "./cta-modal"
 
 const navLinks = [
-  { label: "Usteda", href: "#usteda" },
-  { label: "Poredjenje", href: "#poredjenje" },
+  { label: "Ušteda", href: "#usteda" },
+  { label: "Poređenje", href: "#poredjenje" },
   { label: "Rezultati", href: "#rezultati" },
   { label: "Pitanja", href: "#pitanja" },
   { label: "Kontakt", href: "/kontakt" },
@@ -93,7 +93,7 @@ export function Navbar() {
                 variant="ghost"
                 size="icon"
                 className="text-primary-foreground hover:bg-primary-foreground/10"
-                aria-label="Otvori meni"
+                aria-label="Otvorite meni"
               >
                 <Menu className="h-6 w-6" />
               </Button>

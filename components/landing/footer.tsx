@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer
       className="w-full bg-forest text-primary-foreground"
-      aria-label="Podnozje sajta"
+      aria-label="Podnožje sajta"
     >
       <div className="mx-auto max-w-7xl px-4 py-16 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
@@ -24,7 +24,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm leading-relaxed text-primary-foreground/60">
-              {"Vodeci provajder solarne energije u Srbiji. Pomozite vasem domu da postane energetski nezavisan."}
+              {"Vodeći provajder solarne energije u Srbiji. Pomozite vašem domu da postane energetski nezavisan."}
             </p>
           </div>
 
@@ -33,18 +33,18 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gold">
               {"Brzi linkovi"}
             </h3>
-            <nav className="flex flex-col gap-3" aria-label="Linkovi u podnozju">
+            <nav className="flex flex-col gap-3" aria-label="Linkovi u podnožju">
               <Link
                 href="#usteda"
                 className="text-sm text-primary-foreground/60 transition-colors hover:text-gold"
               >
-                {"Kalkulator ustede"}
+                {"Kalkulator uštede"}
               </Link>
               <Link
                 href="#poredjenje"
                 className="text-sm text-primary-foreground/60 transition-colors hover:text-gold"
               >
-                {"Poredjenje"}
+                {"Poređenje"}
               </Link>
               <Link
                 href="#rezultati"
@@ -56,7 +56,7 @@ export function Footer() {
                 href="#pitanja"
                 className="text-sm text-primary-foreground/60 transition-colors hover:text-gold"
               >
-                {"Cesta pitanja"}
+                {"Česta pitanja"}
               </Link>
               <Link
                 href="/kontakt"
@@ -94,7 +94,7 @@ export function Footer() {
               {"Besplatna procena"}
             </h3>
             <p className="text-sm text-primary-foreground/60">
-              {"Saznajte koliko mozete da ustedite sa Lumina Solar sistemom."}
+              {"Saznajte koliko možete da uštedite sa Lumina Solar sistemom."}
             </p>
             <CTAModal variant="compact" />
           </div>
@@ -105,7 +105,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between">
           <p className="text-xs text-primary-foreground/40">
-            {"© 2026 Lumina Solar d.o.o. Sva prava zadrzana."}
+            {"© 2026 Lumina Solar d.o.o. Sva prava zadržana."}
           </p>
           <div className="flex items-center gap-6">
             <Link
@@ -118,7 +118,7 @@ export function Footer() {
               href="#"
               className="text-xs text-primary-foreground/40 transition-colors hover:text-gold"
             >
-              {"Uslovi koriscenja"}
+              {"Uslovi korišćenja"}
             </Link>
             <span className="text-xs text-primary-foreground/40">
               {"Licenca Srbija #RS-77421"}

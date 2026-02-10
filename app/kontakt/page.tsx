@@ -4,7 +4,6 @@ import React from "react"
 
 import { useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -51,7 +50,7 @@ export default function KontaktPage() {
               className="text-primary-foreground/70 hover:bg-primary-foreground/10 hover:text-primary-foreground"
             >
               <ArrowLeft className="mr-2 h-4 w-4" />
-              {"Nazad na pocetnu"}
+              {"Nazad na početnu"}
             </Button>
           </Link>
         </div>
@@ -66,11 +65,11 @@ export default function KontaktPage() {
               {"Kontaktirajte nas"}
             </Badge>
             <h1 className="text-balance text-3xl font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
-              {"Razgovarajmo o vasoj"}
-              <span className="text-gold">{" solarnoj buducnosti"}</span>
+              {"Razgovarajmo o vašoj"}
+              <span className="text-gold">{" solarnoj budućnosti"}</span>
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-pretty text-primary-foreground/70">
-              {"Nas tim strucnjaka je tu da odgovori na sva vasa pitanja i pomogne vam da napravite pravi izbor."}
+              {"Naš tim stručnjaka je tu da odgovori na sva vaša pitanja i pomogne vam da napravite pravi izbor."}
             </p>
           </div>
         </section>
@@ -80,13 +79,13 @@ export default function KontaktPage() {
           <div className="mx-auto max-w-7xl px-4 lg:px-8">
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
               {/* Contact Form */}
-              <Card className="glass-light border-border/50 shadow-xl">
+              <Card className="overflow-hidden rounded-2xl border-border/30 bg-background/40 shadow-xl backdrop-blur-md">
                 <CardContent className="p-6 sm:p-8">
                   <h2 className="text-xl font-bold text-foreground">
-                    {"Posaljite nam poruku"}
+                    {"Pošaljite nam poruku"}
                   </h2>
                   <p className="mt-2 text-sm text-muted-foreground">
-                    {"Popunite formular i odgovorimo vam u roku od 24 sata."}
+                    {"Popunite formular i odgovorićemo vam u roku od 24 sata."}
                   </p>
 
                   {!submitted ? (
@@ -98,7 +97,7 @@ export default function KontaktPage() {
                         </div>
                         <div className="flex flex-col gap-2">
                           <Label htmlFor="lastName">{"Prezime"}</Label>
-                          <Input id="lastName" placeholder="Markovic" />
+                          <Input id="lastName" placeholder="Marković" />
                         </div>
                       </div>
                       <div className="flex flex-col gap-2">
@@ -122,7 +121,7 @@ export default function KontaktPage() {
                         <textarea
                           id="message"
                           rows={4}
-                          placeholder="Opisite kako vam mozemo pomoci..."
+                          placeholder="Opišite kako vam možemo pomoći..."
                           className="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                         />
                       </div>
@@ -131,7 +130,7 @@ export default function KontaktPage() {
                         className="h-12 bg-gold text-charcoal font-semibold hover:bg-gold/90"
                       >
                         <Send className="mr-2 h-4 w-4" />
-                        {"Posaljite poruku"}
+                        {"Pošaljite poruku"}
                       </Button>
                     </form>
                   ) : (
@@ -143,40 +142,35 @@ export default function KontaktPage() {
                         {"Poruka je poslata!"}
                       </h3>
                       <p className="text-center text-muted-foreground">
-                        {"Hvala vam na interesovanju. Odgovorimo vam u najkracem roku."}
+                        {"Hvala vam na interesovanju. Odgovorićemo vam u najkraćem roku."}
                       </p>
                     </div>
                   )}
                 </CardContent>
               </Card>
 
-              {/* Contact Info & Marcus Card */}
+              {/* Contact Info */}
               <div className="flex flex-col gap-8">
-                {/* Marcus Thorne Card */}
-                <Card className="glass-light border-border/50 shadow-xl overflow-hidden">
+                {/* Contact Person Card */}
+                <Card className="overflow-hidden rounded-2xl border-border/30 bg-background/40 shadow-xl backdrop-blur-md">
                   <CardContent className="p-6 sm:p-8">
                     <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start">
-                      <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border-2 border-gold/30">
-                        <Image
-                          src="/images/marcus-thorne.jpg"
-                          alt="Markus Torn, kontakt osoba u Lumina Solar"
-                          fill
-                          className="object-cover"
-                        />
+                      <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-forest">
+                        <User className="h-10 w-10 text-gold" />
                       </div>
                       <div className="text-center sm:text-left">
                         <h3 className="text-lg font-bold text-foreground">
-                          {"Markus Torn"}
+                          {"Kontakt osoba"}
                         </h3>
                         <p className="text-sm text-muted-foreground">
                           {"Direktor prodaje"}
                         </p>
                         <Badge className="mt-2 border-gold/30 bg-gold/10 text-gold">
                           <User className="mr-1 h-3 w-3" />
-                          {"Vas licni savetnik"}
+                          {"Vaš lični savetnik"}
                         </Badge>
                         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                          {"Sa preko 10 godina iskustva u solarnoj industriji, Markus ce vam pomoci da pronadjete idealno resenje za vas dom."}
+                          {"Sa preko 10 godina iskustva u solarnoj industriji, naš tim će vam pomoći da pronađete idealno rešenje za vaš dom."}
                         </p>
                       </div>
                     </div>
@@ -184,7 +178,7 @@ export default function KontaktPage() {
                 </Card>
 
                 {/* Contact Details */}
-                <Card className="glass-light border-border/50 shadow-xl">
+                <Card className="overflow-hidden rounded-2xl border-border/30 bg-background/40 shadow-xl backdrop-blur-md">
                   <CardContent className="p-6 sm:p-8">
                     <h3 className="text-lg font-bold text-foreground">
                       {"Kontakt informacije"}
@@ -241,9 +235,9 @@ export default function KontaktPage() {
                             {"Radno vreme"}
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            {"Pon - Pet: 08:00 - 18:00"}
+                            {"Pon — Pet: 08:00 — 18:00"}
                             <br />
-                            {"Sub: 09:00 - 14:00"}
+                            {"Sub: 09:00 — 14:00"}
                           </p>
                         </div>
                       </div>

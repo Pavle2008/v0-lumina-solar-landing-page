@@ -8,22 +8,22 @@ const _geist = Geist({ subsets: ['latin'] })
 const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Lumina Solar | Solarna Energija za Vas Dom - Izracunajte Ustedu',
+  title: 'Lumina Solar | Solarna Energija za Vaš Dom — Izračunajte Uštedu',
   description:
-    'Lumina Solar - Prestanite da iznajmljujete energiju. Saznajte koliko mozete da ustedite sa solarnim panelima. Besplatna procena, 0 dinara unapred, 25 godina garancije.',
+    'Lumina Solar — Prestanite da iznajmljujete energiju. Saznajte koliko možete da uštedite sa solarnim panelima. Besplatna procena, 0 dinara unapred, 25 godina garancije.',
   keywords: [
     'solarna energija',
     'solarni paneli',
     'Srbija',
-    'usteda struje',
+    'ušteda struje',
     'Lumina Solar',
     'obnovljiva energija',
     'solarna instalacija',
   ],
   openGraph: {
-    title: 'Lumina Solar | Izracunajte Vasu Ustedu na Struji',
+    title: 'Lumina Solar | Izračunajte Vašu Uštedu na Struji',
     description:
-      'Prestanite da placate skupe racune za struju. Lumina Solar nudi solarna resenja sa 0 dinara unapred i garancijom od 25 godina.',
+      'Prestanite da plaćate skupe račune za struju. Lumina Solar nudi solarna rešenja sa 0 dinara unapred i garancijom od 25 godina.',
     type: 'website',
     locale: 'sr_RS',
     siteName: 'Lumina Solar',

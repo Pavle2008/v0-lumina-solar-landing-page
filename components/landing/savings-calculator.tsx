@@ -23,7 +23,7 @@ export function SavingsCalculator() {
   return (
     <SectionWrapper
       id="usteda"
-      ariaLabel="Kalkulator ustede"
+      ariaLabel="Kalkulator uštede"
       className="bg-background py-20 lg:py-28"
     >
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
@@ -34,10 +34,10 @@ export function SavingsCalculator() {
             {"Interaktivni kalkulator"}
           </Badge>
           <h2 className="text-balance text-2xl font-bold text-foreground sm:text-3xl lg:text-4xl">
-            {"Koliko mozete da ustedite?"}
+            {"Koliko možete da uštedite?"}
           </h2>
           <p className="mt-4 text-pretty text-muted-foreground">
-            {"Pomerite klizac da vidite koliko vam solarna energija moze ustedeti tokom 25 godina."}
+            {"Pomerite klizač da vidite koliko vam solarna energija može uštedeti tokom 25 godina."}
           </p>
         </div>
 
@@ -47,18 +47,18 @@ export function SavingsCalculator() {
             <CardHeader className="pb-4">
               <CardTitle className="flex items-center gap-2 text-lg text-foreground">
                 <Banknote className="h-5 w-5 text-gold" />
-                {"Vas prosecni mesecni racun za struju"}
+                {"Vaš prosečni mesečni račun za struju"}
               </CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col gap-8">
               {/* Slider */}
               <div className="flex flex-col gap-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">{"5,000 RSD"}</span>
+                  <span className="text-sm text-muted-foreground">{"5.000 RSD"}</span>
                   <span className="text-2xl font-bold text-foreground transition-all duration-300">
                     {formatNumber(bill)} {"RSD"}
                   </span>
-                  <span className="text-sm text-muted-foreground">{"50,000 RSD"}</span>
+                  <span className="text-sm text-muted-foreground">{"50.000 RSD"}</span>
                 </div>
                 <Slider
                   value={monthlyBill}
@@ -75,7 +75,7 @@ export function SavingsCalculator() {
                 <div className="glass rounded-xl p-4 text-center">
                   <TrendingUp className="mx-auto mb-2 h-6 w-6 text-gold" />
                   <p className="text-sm font-medium text-muted-foreground">
-                    {"Usteda u prvoj godini"}
+                    {"Ušteda u prvoj godini"}
                   </p>
                   <p className="mt-1 text-xl font-bold text-foreground">
                     {formatNumber(yearOneSavings)} {"RSD"}
@@ -84,7 +84,7 @@ export function SavingsCalculator() {
                 <div className="glass rounded-xl p-4 text-center">
                   <Banknote className="mx-auto mb-2 h-6 w-6 text-gold" />
                   <p className="text-sm font-medium text-muted-foreground">
-                    {"Godisnja usteda"}
+                    {"Godišnja ušteda"}
                   </p>
                   <p className="mt-1 text-xl font-bold text-foreground">
                     {formatNumber(annualSavings)} {"RSD"}
@@ -93,13 +93,13 @@ export function SavingsCalculator() {
                 <div className="relative overflow-hidden rounded-xl bg-forest p-4 text-center">
                   <Leaf className="mx-auto mb-2 h-6 w-6 text-gold" />
                   <p className="text-sm font-medium text-primary-foreground/70">
-                    {"Usteda za 25 godina"}
+                    {"Ušteda za 25 godina"}
                   </p>
                   <p className="mt-1 text-xl font-bold text-gold">
                     {formatNumber(twentyFiveYearSavings)} {"RSD"}
                   </p>
                   <Badge className="mt-2 border-gold/30 bg-gold/20 text-gold">
-                    {"Bez unapred placanja"}
+                    {"Bez unapred plaćanja"}
                   </Badge>
                 </div>
               </div>
@@ -108,7 +108,7 @@ export function SavingsCalculator() {
               <div className="flex flex-col items-center gap-3 pt-4">
                 <CTAModal variant="medium" pulse />
                 <p className="text-xs text-muted-foreground">
-                  {"*Proracun se zasniva na prosecnim cenama elektricne energije u Srbiji"}
+                  {"*Proračun se zasniva na prosečnim cenama električne energije u Srbiji"}
                 </p>
               </div>
             </CardContent>

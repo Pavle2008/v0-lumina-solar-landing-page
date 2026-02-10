@@ -23,15 +23,15 @@ import {
 
 const comparisonData = [
   {
-    feature: "Godisnje poskupljenje",
+    feature: "Godišnje poskupljenje",
     icon: TrendingUp,
     utility: "5-8% svake godine",
     utilityBad: true,
-    lumina: "0% - fiksna cena",
+    lumina: "0% — fiksna cena",
     luminaGood: true,
   },
   {
-    feature: "Vlasnistvo",
+    feature: "Vlasništvo",
     icon: Home,
     utility: "Iznajmljivanje zauvek",
     utilityBad: true,
@@ -39,7 +39,7 @@ const comparisonData = [
     luminaGood: true,
   },
   {
-    feature: "Poreske olaksice",
+    feature: "Poreske olakšice",
     icon: Receipt,
     utility: "Nema",
     utilityBad: true,
@@ -51,7 +51,7 @@ const comparisonData = [
     icon: TrendingDown,
     utility: "0 RSD uticaj",
     utilityBad: true,
-    lumina: "~4% povecanje vrednosti",
+    lumina: "~4% povećanje vrednosti",
     luminaGood: true,
   },
 ]
@@ -60,7 +60,7 @@ export function ComparisonTable() {
   return (
     <SectionWrapper
       id="poredjenje"
-      ariaLabel="Poredjenje distributera i Lumina Solar"
+      ariaLabel="Poređenje distributera i Lumina Solar"
       className="bg-background py-20 lg:py-28"
     >
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
@@ -74,7 +74,7 @@ export function ComparisonTable() {
             {"Distributer vs. Lumina Solar"}
           </h2>
           <p className="mt-4 text-pretty text-muted-foreground">
-            {"Pogledajte zasto sve vise vlasnika kuca prelazi na solarnu energiju."}
+            {"Pogledajte zašto sve više vlasnika kuća prelazi na solarnu energiju."}
           </p>
         </div>
 
@@ -176,14 +176,14 @@ export function CTABanner({ variant = "forest" }: { variant?: "forest" | "gold" 
               isForest ? "text-primary-foreground" : "text-charcoal"
             }`}
           >
-            {"Spremni da prestanete da preplacujete struju?"}
+            {"Spremni da prestanete da preplaćujete struju?"}
           </h3>
           <p
             className={`mt-2 ${
               isForest ? "text-primary-foreground/70" : "text-charcoal/70"
             }`}
           >
-            {"Besplatna procena za vas dom - bez ikakvih obaveza."}
+            {"Besplatna procena za vaš dom — bez ikakvih obaveza."}
           </p>
         </div>
         <CTAModal

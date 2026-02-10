@@ -52,17 +52,17 @@ export function CTAModal({ variant = "medium", className, pulse = false }: CTABu
           )}
         >
           {variant !== "link" && <Calculator className="mr-2 h-5 w-5" />}
-          {"Izracunajte Vasu Ustedu"}
+          {"Izračunajte Vašu Uštedu"}
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-foreground">
             <Calculator className="h-5 w-5 text-gold" />
-            {"Izracunajte Vasu Ustedu"}
+            {"Izračunajte Vašu Uštedu"}
           </DialogTitle>
           <DialogDescription>
-            {"Unesite vase podatke i kontaktiramo vas u roku od 24 sata sa besplatnom procenom."}
+            {"Unesite vaše podatke i kontaktiraćemo vas u roku od 24 sata sa besplatnom procenom."}
           </DialogDescription>
         </DialogHeader>
 
@@ -70,7 +70,7 @@ export function CTAModal({ variant = "medium", className, pulse = false }: CTABu
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
               <Label htmlFor="name">{"Ime i prezime"}</Label>
-              <Input id="name" placeholder="Marko Markovic" />
+              <Input id="name" placeholder="Marko Marković" />
             </div>
             <div className="flex flex-col gap-2">
               <Label htmlFor="phone">{"Telefon"}</Label>
@@ -81,14 +81,14 @@ export function CTAModal({ variant = "medium", className, pulse = false }: CTABu
               <Input id="email" type="email" placeholder="marko@email.com" />
             </div>
             <div className="flex flex-col gap-2">
-              <Label htmlFor="bill">{"Prosecni mesecni racun za struju (RSD)"}</Label>
-              <Input id="bill" type="number" placeholder="15,000" />
+              <Label htmlFor="bill">{"Prosečni mesečni račun za struju (RSD)"}</Label>
+              <Input id="bill" type="number" placeholder="15000" />
             </div>
             <Button type="submit" className="bg-gold text-charcoal hover:bg-gold/90 h-12 font-semibold">
-              {"Posaljite zahtev"}
+              {"Pošaljite zahtev"}
             </Button>
             <Badge variant="outline" className="mx-auto text-muted-foreground">
-              {"100% besplatno - bez obaveza"}
+              {"100% besplatno — bez obaveza"}
             </Badge>
           </form>
         ) : (
@@ -100,7 +100,7 @@ export function CTAModal({ variant = "medium", className, pulse = false }: CTABu
               {"Hvala vam!"}
             </h3>
             <p className="text-center text-muted-foreground">
-              {"Vas zahtev je primljen. Kontaktiramo vas u roku od 24 sata sa personalizovanom procenom ustede."}
+              {"Vaš zahtev je primljen. Kontaktiraćemo vas u roku od 24 sata sa personalizovanom procenom uštede."}
             </p>
           </div>
         )}
