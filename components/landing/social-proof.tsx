@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { SectionWrapper } from "./section-wrapper"
-import { Star, Battery, ShieldCheck, Award, BadgeCheck } from "lucide-react"
+import { Star, BatteryFull, ShieldCheck, Award, BadgeCheck, Battery } from "lucide-react"
 
 const testimonials = [
   {
@@ -15,7 +15,7 @@ const testimonials = [
     quote:
       "Kao udaljeni softverski inženjer, ne mogu da priuštim zastoje. Moj Lumina sistem sa Powerwall-om održava moju kućnu kancelariju u funkciji čak i kada lokalna mreža zakaže. Integracija podataka je besprekorna.",
     badgeText: "Baterijski backup verifikovan",
-    BadgeIcon: Battery,
+    BadgeIcon: BatteryFull,
   },
   {
     name: "David H.",
