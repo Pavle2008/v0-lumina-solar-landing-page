@@ -1,6 +1,7 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import Script from 'next/script'
 
 import './globals.css'
 
@@ -45,7 +46,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sr">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        {children}
+        <Script
+          src="https://cdn.voiceflow.com/widget-next/bundle.mjs"
+          strategy="afterInteractive"
+          onLoad={() => {
+            if (typeof window !== 'undefined' && window.voiceflow) {
+              window.voiceflow.chat.load({
+                verify: { projectID: '698af61f71c5be5fc9493b8b' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production',
+                voice: {
+                  url: 'https://runtime-api.voiceflow.com',
+                },
+              })
+            }
+          }}
+        />
+      </body>
     </html>
   )
 }
